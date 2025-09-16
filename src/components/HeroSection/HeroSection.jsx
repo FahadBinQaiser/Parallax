@@ -1,4 +1,5 @@
 import React from "react";
+import StyledWrapper from "../UI_Components/StyledWrapper";
 export default function HeroSection() {
   return (
     <div className="heroSection flex flex-col text-[#000000]/70 gap-5 justify-center items-center h-screen pt-16">
@@ -18,9 +19,9 @@ export default function HeroSection() {
           so your people focus on strategy, not busywork.
         </span>
       </p>
-      <button className="cursor-pointer rounded-2xl bg-[#FB2B8F] w-44 h-16 text-white text-2xl">
-        Book a Call
-      </button>
+      <StyledWrapper>
+        <button className="btn">Book a Call</button>
+      </StyledWrapper>
     </div>
   );
 }
