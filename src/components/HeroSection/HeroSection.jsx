@@ -17,7 +17,7 @@ export default function HeroSection() {
         Automate repetitive tasks with an AI Agent built for SaaS teams <br />{" "}
         so your people focus on strategy, not busywork.
       </p>
-      <button className="cursor-pointer rounded-3xl bg-[#FB2B8F] w-44 h-16 text-white text-2xl">
+      <button className="cursor-pointer rounded-2xl bg-[#FB2B8F] w-44 h-16 text-white text-2xl">
         Book a Call
       </button>
     </div>
