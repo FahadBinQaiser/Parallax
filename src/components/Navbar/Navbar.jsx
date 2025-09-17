@@ -4,7 +4,11 @@ import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
+  if(isOpen){
+    document.body.style.overflowY = "hidden"
+  }else{
+    document.body.style.overflowY = "auto"
+  }
   return (
     <nav className="w-full py-4">
       <div className="max-w-sm z-50 md:max-w-2xl h-20 md:h-20 pr-3 rounded-xl pl-5 bg-black/70 mx-auto flex items-center justify-between">
