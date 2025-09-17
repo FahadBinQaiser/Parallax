@@ -40,7 +40,7 @@ export default function Navbar() {
           </StyledWrapper>
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-2xl text-white"
+            className="text-2xl cursor-pointer text-white"
           >
             {isOpen ? <X /> : <Menu />}
           </button>
