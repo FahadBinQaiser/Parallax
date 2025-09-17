@@ -10,7 +10,6 @@ export default function Navbar() {
       <div className="max-w-sm z-50 md:max-w-2xl h-20 md:h-20 pr-3 rounded-xl pl-5 bg-black/70 mx-auto flex items-center justify-between">
         <h1 className="text-3xl text-white">Parallax</h1>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center text-xl gap-6">
           <div className="flex gap-6 text-white">
             <a href="/" className="hover:text-[#FB2B8F]">
@@ -31,7 +30,6 @@ export default function Navbar() {
           </StyledWrapper>
         </div>
 
-        {/* Mobile Navigation */}
         <div className="flex md:hidden pl-4 pr-1">
           <StyledWrapper>
             <button className="btn">Book a Call</button>
@@ -44,7 +42,6 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         <div
           className={`fixed top-28 right-7 w-64 h-96 transition-all duration-300 ease-in-out flex justify-center rounded-xl text-center items-center bg-black/90 z-50 ${
             isOpen
