@@ -1,7 +1,10 @@
 import React from "react";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
 import StyledWrapper from "../UI_Components/StyledWrapper";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="w-full py-4">
       <div className="max-w-2xl rounded-xl pl-5 bg-black/70 mx-auto flex items-center justify-between">
@@ -27,6 +30,9 @@ export default function Navbar() {
               Book a Call
             </button>
           </StyledWrapper>
+        </div>
+        <div className="md:hidden">
+          <button>`{isOpen ? <Menu /> : <X />}`</button>
         </div>
       </div>
     </nav>
