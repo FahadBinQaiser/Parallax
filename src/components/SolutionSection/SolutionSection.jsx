@@ -37,10 +37,10 @@ export default function SolutionSection() {
           ))}
         </div>
 
-        <p className=" text-lg md:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
           That's exactly what our AI agent does. It quietly takes over the
-          repetitive, low-leverage tasks holding your team back — so your people
-          focus on what matters:{" "}
+          repetitive, low-leverage tasks holding your team back, so your people
+          focus on what matters{" "}
           <span className="text-[#FB2B8F] font-semibold">
             strategy, creativity, growth.
           </span>
