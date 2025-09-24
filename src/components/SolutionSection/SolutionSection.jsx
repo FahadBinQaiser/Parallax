@@ -23,17 +23,26 @@ export default function SolutionSection() {
   ];
 
   return (
-    <section className="text-[#000000]/70 py-20 px-6 md:px-0">
+    <section className="text-[#000000]/70 py-20 px-5 xl:px-0">
       <div className="max-w-6xl space-y-10 mx-auto text-center">
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold text-gray-900 leading-tight">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900 leading-tight">
           Meet your{" "}
           <span className="highlight text-[#FB2B8F]">AI teammate</span> that
           never sleeps.
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {solutions.map(({ icon, title, desc }, idx) => (
-            <Card key={idx} icon={icon} title={title} desc={desc} />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-6">
+          {solutions.map((item, idx) => (
+            <div
+              key={idx}
+              className={
+                idx === solutions.length - 1
+                  ? "md:col-span-2 lg:col-span-1"
+                  : ""
+              }
+            >
+              <Card icon={item.icon} title={item.title} desc={item.desc} />
+            </div>
           ))}
         </div>
 
