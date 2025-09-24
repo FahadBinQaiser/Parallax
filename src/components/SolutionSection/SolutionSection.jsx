@@ -47,7 +47,7 @@ export default function SolutionSection() {
         </p>
 
         <StyledWrapper>
-          <button className="btn w-64 h-64">Book a Call</button>
+          <button className="btn">Book a Call</button>
         </StyledWrapper>
       </div>
     </section>
