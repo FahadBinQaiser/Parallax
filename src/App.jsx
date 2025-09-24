@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import Navbar from "./components/Navbar/Navbar";
 import LogoSection from "./components/LogoSection/LogoSection";
 import ProblemSection from "./components/ProblemSection/ProblemSection";
+import SolutionSection from "./components/SolutionSection/SolutionSection";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <HeroSection />
       <LogoSection />
       <ProblemSection />
+      <SolutionSection />
     </>
   );
 }
