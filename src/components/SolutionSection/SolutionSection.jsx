@@ -1,6 +1,6 @@
 import React from "react";
 import StyledWrapper from "../UI_Components/StyledWrapper";
-
+import Card from "../UI_Components/Card";
 import { FaRegClock, FaTasks, FaSmile } from "react-icons/fa";
 
 export default function SolutionSection() {
@@ -33,22 +33,7 @@ export default function SolutionSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {solutions.map(({ icon, title, desc }, idx) => (
-            <div
-              key={idx}
-              className="p-8 bg-white rounded-xl border border-gray-200 hover:border-gray-300 transition-colors duration-200 shadow-sm hover:shadow-md"
-            >
-              <div className="flex flex-col items-center text-center h-full">
-                <div className="flex items-center justify-center w-20 h-20 rounded-full mb-6">
-                  {icon}
-                </div>
-
-                <h3 className="text-4xl font-semibold text-gray-900 mb-4">
-                  {title}
-                </h3>
-
-                <p className="text-gray-600 text-lg leading-relaxed">{desc}</p>
-              </div>
-            </div>
+            <Card key={idx} icon={icon} title={title} desc={desc} />
           ))}
         </div>
 
