@@ -43,10 +43,12 @@ export default function FeaturesSection() {
             <div key={idx} className={`${size}`}>
               <Gradient
                 index={idx}
-                className="flex flex-col justify-center items-start p-8 bg-white rounded-2xl shadow-lg border border-gray-100 hover:border-[#FB6F92] hover:shadow-pink-100 transition transform hover:-translate-y-6 h-full w-full"
+                className="flex flex-col justify-center items-start p-8 bg-white rounded-2xl shadow-lg border border-gray-100 hover:border-[#FB6F92] hover:shadow-pink-100 transition transform duration-300 hover:-translate-y-6 h-full w-full group"
               >
                 <div className="mb-4">{icon}</div>
-                <h3 className="text-4xl font-semibold leading-snug">{title}</h3>
+                <h3 className="text-4xl font-semibold group-hover:text-[#FB6F92] leading-snug">
+                  {title}
+                </h3>
                 <p className="mt-3 text-base md:text-lg">{desc}</p>
               </Gradient>
             </div>
