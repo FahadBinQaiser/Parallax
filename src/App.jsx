@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import LogoSection from "./components/LogoSection/LogoSection";
 import ProblemSection from "./components/ProblemSection/ProblemSection";
 import SolutionSection from "./components/SolutionSection/SolutionSection";
+import FeatureSection from "./components/FeatureSection/FeatureSection";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <LogoSection />
       <ProblemSection />
       <SolutionSection />
+      <FeatureSection />
     </>
   );
 }
