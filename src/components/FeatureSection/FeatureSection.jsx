@@ -1,5 +1,5 @@
 import React from "react";
-import Gradient from "../UI_Components/gradient";
+import Gradient from "../UI_Components/Gradient";
 import { FaCogs, FaSlidersH, FaRegClock, FaUsers } from "react-icons/fa";
 
 export default function FeaturesSection() {
@@ -32,10 +32,10 @@ export default function FeaturesSection() {
 
   return (
     <section className="text-[#000000]/70 py-20 px-6 md:px-0">
-      <div className="max-w-6xl mx-auto text-center space-y-12">
-        <h2 className="text-4xl sm:text-6xl font-bold text-gray-900 leading-tight">
+      <div className="max-w-6xl mx-auto space-y-12">
+        <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900 leading-20">
           What our <span className="text-[#FB2B8F]">AI agent</span> handles
-          <br /> (so you don’t have to):
+          <br /> so you don’t have to:
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[200px] gap-6 text-left">
