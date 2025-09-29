@@ -33,13 +33,11 @@ export default function FeaturesSection() {
   return (
     <section className="text-[#000000]/70 py-20 px-6 md:px-0">
       <div className="max-w-6xl mx-auto text-center space-y-12">
-        {/* Headline */}
         <h2 className="text-4xl sm:text-6xl font-bold text-gray-900 leading-tight">
           What our <span className="text-[#FB2B8F]">AI agent</span> handles
           <br /> (so you don’t have to):
         </h2>
 
-        {/* Bento Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[200px] gap-6 text-left">
           {features.map(({ icon, title, desc, size }, idx) => (
             <Gradient
