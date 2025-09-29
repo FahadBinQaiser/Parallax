@@ -46,7 +46,7 @@ export default function FeaturesSection() {
                 className="flex flex-col justify-center items-start p-8 bg-white rounded-2xl shadow-lg border border-gray-100 hover:border-[#FB6F92] hover:shadow-pink-100 transition transform hover:-translate-y-2 h-full w-full"
               >
                 <div className="mb-4">{icon}</div>
-                <h3 className="text-3xl font-semibold text-gray-900 leading-snug">
+                <h3 className="text-4xl font-semibold text-gray-900 leading-snug">
                   {title}
                 </h3>
                 <p className="mt-3 text-base md:text-lg text-gray-700">
