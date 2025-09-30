@@ -5,40 +5,39 @@ import { Workflow, Settings2, Clock, Users2 } from "lucide-react";
 export default function FeaturesSection() {
   const features = [
     {
-      icon: <Workflow className="text-[#FB6F92] w-12 h-12" />,
+      icon: <Workflow className="text-[#FB6F92] w-10 h-10" />,
       title: "Automation that just works",
       desc: "No complicated setups. Just connect it once, and your workflows run smoothly in the background. The agent keeps everything moving without you lifting a finger.",
-      size: "md:col-span-2 md:row-span-1", // only apply spans on md+
+      size: "lg:col-span-2 lg:row-span-1 md:col-span-2", // stretch full row on iPad
     },
     {
-      icon: <Settings2 className="text-[#FB6F92] w-12 h-12" />,
-      title: "Your workflows, your rules",
+      icon: <Settings2 className="text-[#FB6F92] w-10 h-10" />,
+      title: "Your workflows and rules",
       desc: "Every team has its own way of working, this AI adapts to yours. You set the rules, the priorities, and the pace, and it follows through with zero distractions or wasted steps.",
-      size: "md:col-span-1 md:row-span-2",
+      size: "lg:col-span-1 lg:row-span-2 md:col-span-2 md:row-span-1",
     },
     {
-      icon: <Clock className="text-[#FB6F92] w-12 h-12" />,
+      icon: <Clock className="text-[#FB6F92] w-10 h-10" />,
       title: "Always on reliability",
       desc: "It doesn’t sleep, forget, or burn out. Tasks are executed consistently, day and night, giving you complete confidence that nothing slips through the cracks.",
-      size: "md:col-span-1 md:row-span-1",
+      size: "xl:col-span-1 lg:col-span-2 lg:row-span-1 md:col-span-1", // full width at iPad
     },
     {
-      icon: <Users2 className="text-[#FB6F92] w-12 h-12" />,
+      icon: <Users2 className="text-[#FB6F92] w-10 h-10" />,
       title: "Built for teams",
       desc: "Deadlines, launches, last-minute pivots — the agent keeps up with it all. It takes care of the repetitive tasks so your people can focus on momentum and results.",
-      size: "md:col-span-1 md:row-span-1",
+      size: "xl:col-span-1 lg:col-span-3 lg:row-span-1 md:col-span-1", // full width at iPad
     },
   ];
 
   return (
-    <section className="text-[#000000]/70 py-20 px-6 md:px-0">
-      <div className="max-w-5xl mx-auto text-center space-y-12">
-        <h2 className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+    <section className="text-[#000000]/70 py-20 px-6 xl:px-0">
+      <div className="max-w-5xl mx-auto space-y-12">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance text-center">
           What our <span className="text-[#FB6F92]">AI agent</span> handles
           <br /> so you don’t have to:
         </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 auto-rows-[280px] gap-6 text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[280px] gap-6 text-left">
           {features.map(({ icon, title, desc, size }, idx) => (
             <div key={idx} className={`${size}`}>
               <Gradient
@@ -47,11 +46,14 @@ export default function FeaturesSection() {
                 hover:border-[#FB6F92] hover:shadow-pink-100 transition transform duration-300 hover:-translate-y-4 
                 h-full w-full group"
               >
-                <div className="mb-4">{icon}</div>
-                <h3 className="text-3xl md:text-4xl font-semibold group-hover:text-[#FB6F92] leading-snug">
+                <div className="p-3 rounded-full bg-gradient-to-tr from-[#FB6F92]/20 to-[#FB6F92]/40">
+                  {icon}
+                </div>
+
+                <h3 className="text-2xl sm:text-3xl md:text-4xl font-semibold group-hover:text-[#FB6F92] leading-snug transition-colors duration-300">
                   {title}
                 </h3>
-                <p className="mt-3 text-base md:text-lg">{desc}</p>
+                <p className="mt-3 text-sm sm:text-base md:text-lg">{desc}</p>
               </Gradient>
             </div>
           ))}
