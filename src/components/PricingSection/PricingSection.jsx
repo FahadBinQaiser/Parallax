@@ -5,13 +5,13 @@ export default function PricingSection() {
   return (
     <section className="py-16 sm:py-20 text-[#000000]/70 pricing-section">
       <div className="max-w-7xl mx-auto space-y-10 px-4 sm:px-6 text-center">
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+        <h2 className="text-balance text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
           Serious{" "}
           <span className="highlight text-[#FB2B8F]">About Growth?</span> So Are
           We
         </h2>
 
-        <div className="pricingCards mx-auto flex flex-col md:flex-row gap-6 justify-center items-center md:items-stretch max-w-5xl">
+        <div className="pricingCards mx-auto flex flex-col md:flex-row gap-10 sm:gap-6 justify-center items-center md:items-stretch max-w-5xl">
           <PricingCard
             title="Starter Automation"
             price="$100"
