@@ -59,7 +59,7 @@ const StyledWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1.4rem;
     width: 25rem;
     background-color: hsl(340, 15%, 8%);
     background-image: radial-gradient(
@@ -73,6 +73,7 @@ const StyledWrapper = styled.div`
     border-radius: 1rem;
     box-shadow: 0px -12px 28px 0px rgba(255, 43, 143, 0.25) inset;
     overflow: visible;
+    transition: transform 0.3s ease;
   }
 
   .popular {
@@ -94,7 +95,6 @@ const StyledWrapper = styled.div`
 
   .popular-card {
     transform: scale(1.04);
-    transition: all 0.3s ease;
     box-shadow: 0 0 24px rgba(251, 43, 143, 0.4);
     z-index: 5;
   }
@@ -123,9 +123,9 @@ const StyledWrapper = styled.div`
   }
 
   .card_title__container .card_paragraph {
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--paragraph);
   }
 
@@ -139,13 +139,13 @@ const StyledWrapper = styled.div`
   .card__list {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.6rem;
   }
 
   .card__list_item {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.7rem;
   }
 
   .check {
@@ -165,7 +165,7 @@ const StyledWrapper = styled.div`
   }
 
   .list_text {
-    font-size: 1.4rem;
+    font-size: 1.14rem;
     color: var(--white);
   }
 
@@ -184,12 +184,71 @@ const StyledWrapper = styled.div`
     border: 0;
     border-radius: 9999px;
     box-shadow: inset 0 -2px 25px -4px rgba(255, 255, 255, 0.2);
+    transition: all 0.2s ease;
   }
 
   .button:hover {
     transform: scale(1.02);
-    transition: all 0.2s ease;
     box-shadow: 0 0 12px rgba(251, 43, 143, 0.5);
+  }
+
+  @media (max-width: 1024px) {
+    .card {
+      width: 22rem;
+      padding: 1.5rem;
+    }
+    .card_title__container .card_title {
+      font-size: 1.8rem;
+    }
+    .list_text {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      width: 90%;
+      margin: 0 auto;
+      padding: 1.5rem;
+    }
+    .pricing-tooltip {
+      font-size: 1rem;
+      padding: 0.4rem 0.8rem;
+    }
+    .card_title__container .card_title {
+      font-size: 1.6rem;
+    }
+    .card_title__container .card_paragraph {
+      font-size: 0.85rem;
+    }
+    .list_text {
+      font-size: 0.9rem;
+    }
+    .button {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+      margin: 0 auto;
+      padding: 1.2rem;
+    }
+    .pricing-tooltip {
+      font-size: 0.9rem;
+      padding: 0.3rem 0.6rem;
+    }
+    .card_title__container .card_title {
+      font-size: 1.4rem;
+    }
+    .list_text {
+      font-size: 0.85rem;
+    }
+    .button {
+      font-size: 0.85rem;
+      padding: 0.6rem;
+    }
   }
 `;
 

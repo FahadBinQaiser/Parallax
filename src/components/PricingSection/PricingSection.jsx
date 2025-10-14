@@ -11,7 +11,7 @@ export default function PricingSection() {
           We
         </h2>
 
-        <div className="pricingCards mx-auto flex flex-col md:flex-row gap-10 sm:gap-6 justify-center items-center md:items-stretch max-w-5xl">
+        <div className="pricingCards mx-auto flex flex-col sm:flex-row md:flex-wrap justify-center items-center md:items-stretch gap-2 gap-y-10 sm:gap-y-4 md:gap-4 lg:gap-6 max-w-5xl">
           <PricingCard
             title="Starter Automation"
             price="$100"
