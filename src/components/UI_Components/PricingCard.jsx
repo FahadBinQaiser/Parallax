@@ -75,7 +75,6 @@ const StyledWrapper = styled.div`
     overflow: visible;
   }
 
-  /* 🟣 Popular Tag */
   .popular {
     position: absolute;
     top: -0.9rem;
@@ -93,7 +92,6 @@ const StyledWrapper = styled.div`
     z-index: 2;
   }
 
-  /* 🟣 Popular card subtle glow */
   .popular-card {
     transform: scale(1.04);
     transition: all 0.3s ease;
