@@ -1,10 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 
-const PricingCard = ({ title, price, paragraph, features, buttonText }) => {
+const PricingCard = ({
+  title,
+  price,
+  paragraph,
+  features,
+  buttonText,
+  isPopular,
+}) => {
   return (
     <StyledWrapper>
-      <div className="card">
+      <div className={`card ${isPopular ? "popular-card" : ""}`}>
+        {isPopular && <div className="popular">Most Popular</div>}
         <div className="pricing-tooltip">{price}</div>
         <div className="card__border" />
         <div className="card_title__container">
@@ -64,6 +72,37 @@ const StyledWrapper = styled.div`
       radial-gradient(at 0% 0%, rgba(255, 255, 255, 0.04) 0px, transparent 60%);
     border-radius: 1rem;
     box-shadow: 0px -12px 28px 0px rgba(255, 43, 143, 0.25) inset;
+    overflow: visible;
+  }
+
+  /* 🟣 Popular Tag */
+  .popular {
+    position: absolute;
+    top: -0.9rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, #fb2b8f 0%, #ff6ec4 50%, #e14f9c 100%);
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0.35rem 1rem;
+    border-radius: 9999px;
+    box-shadow: 0 0 12px rgba(251, 43, 143, 0.4);
+    z-index: 2;
+  }
+
+  /* 🟣 Popular card subtle glow */
+  .popular-card {
+    transform: scale(1.04);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 24px rgba(251, 43, 143, 0.4);
+    z-index: 5;
+  }
+
+  .popular-card:hover {
+    transform: scale(1.06);
   }
 
   .pricing-tooltip {
@@ -88,7 +127,7 @@ const StyledWrapper = styled.div`
   .card_title__container .card_paragraph {
     margin-top: 0.25rem;
     text-align: center;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: var(--paragraph);
   }
 
@@ -134,7 +173,7 @@ const StyledWrapper = styled.div`
 
   .button {
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 0.6rem;
     width: 100%;
     background-image: linear-gradient(
       90deg,
