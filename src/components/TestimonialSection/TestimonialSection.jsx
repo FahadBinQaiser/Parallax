@@ -1,5 +1,4 @@
 import React from "react";
-import Gradient from "../UI_Components/Gradient";
 
 export default function Testimonials() {
   const testimonials = [
