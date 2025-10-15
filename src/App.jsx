@@ -8,6 +8,7 @@ import SolutionSection from "./components/SolutionSection/SolutionSection";
 import FeatureSection from "./components/FeatureSection/FeatureSection";
 import TestimonialSection from "./components/TestimonialSection/TestimonialSection";
 import PricingSection from "./components/PricingSection/PricingSection";
+import CtaSection from "./components/CtaSection/CtaSection";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <FeatureSection />
       <TestimonialSection />
       <PricingSection />
+      <CtaSection />
     </>
   );
 }
