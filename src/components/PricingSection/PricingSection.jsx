@@ -14,7 +14,7 @@ export default function PricingSection() {
         <div className="pricingCards mx-auto flex flex-col sm:flex-row md:flex-wrap justify-center items-center md:items-stretch gap-2 gap-y-10 sm:gap-y-4 md:gap-4 lg:gap-6 max-w-5xl">
           <PricingCard
             title="Starter Automation"
-            price="$100"
+            price="$300"
             paragraph="Perfect for small SaaS teams ready to offload manual work and free up time for strategy."
             features={[
               "Up to 5 automated workflows",
