@@ -21,7 +21,7 @@ export default function CtaSection() {
         </p>
 
         <div className="pt-6">
-          <button className="w-56 sm:w-64 py-4 text-lg rounded-full text-white bg-gradient-to-r from-[#fb2b8f] via-[#ff6ec4] to-[#e14f9c] shadow-[0_0_24px_rgba(251,43,143,0.5)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_32px_rgba(251,43,143,0.7)]">
+          <button className="w-56 sm:w-64 py-4 text-lg rounded-full text-white bg-gradient-to-r from-[#fb2b8f] via-[#ff6ec4] to-[#e14f9c] shadow-[0_0_24px_rgba(251,43,143,0.5)] transition-all cursor-pointer duration-300 hover:scale-105 hover:shadow-[0_0_32px_rgba(251,43,143,0.7)]">
             Book a Call
           </button>
         </div>
