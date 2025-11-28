@@ -4,14 +4,14 @@ import styled from "styled-components";
 const Button = () => {
   return (
     <StyledWrapper>
-      <button className="btn">Book a Call</button>
+      <button className="btn">See what gets automated</button>
     </StyledWrapper>
   );
 };
 
 const StyledWrapper = styled.div`
   .btn {
-    width: 8em;
+    width: 100%;
     height: 2.7em;
     margin: 0.5em;
     background: #fb2b8f;
@@ -23,6 +23,7 @@ const StyledWrapper = styled.div`
     position: relative;
     z-index: 1;
     overflow: hidden;
+    padding: 0 1.5em;
   }
 
   button:hover {
