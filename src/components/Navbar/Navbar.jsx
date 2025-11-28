@@ -4,10 +4,10 @@ import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  if(isOpen){
-    document.body.style.overflowY = "hidden"
-  }else{
-    document.body.style.overflowY = "auto"
+  if (isOpen) {
+    document.body.style.overflowY = "hidden";
+  } else {
+    document.body.style.overflowY = "auto";
   }
   return (
     <nav className="w-full py-4">
@@ -17,27 +17,17 @@ export default function Navbar() {
         <div className="hidden md:flex items-center text-xl gap-6">
           <div className="flex gap-6 text-white">
             <a href="/" className="hover:text-[#FB2B8F]">
-              Home
+              Pricing
             </a>
             <a href="/" className="hover:text-[#FB2B8F]">
-              About
-            </a>
-            <a href="/" className="hover:text-[#FB2B8F]">
-              Services
-            </a>
-            <a href="/" className="hover:text-[#FB2B8F]">
-              Contact
+              Request a demo
             </a>
           </div>
-          <StyledWrapper>
-            <button className="btn">Book a Call</button>
-          </StyledWrapper>
+          <StyledWrapper />
         </div>
 
         <div className="flex md:hidden pl-4 pr-1">
-          <StyledWrapper>
-            <button className="btn">Book a Call</button>
-          </StyledWrapper>
+          <StyledWrapper />
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-2xl cursor-pointer text-white"
@@ -56,23 +46,13 @@ export default function Navbar() {
           <div className="flex flex-col md:hidden items-center gap-6">
             <div className="flex flex-col gap-6 text-3xl text-white">
               <a href="/" className="hover:text-[#FB2B8F]">
-                Home
+                Pricing
               </a>
               <a href="/" className="hover:text-[#FB2B8F]">
-                About
-              </a>
-              <a href="/" className="hover:text-[#FB2B8F]">
-                Services
-              </a>
-              <a href="/" className="hover:text-[#FB2B8F]">
-                Contact
+                Request a demo
               </a>
             </div>
-            <StyledWrapper>
-              <button className="w-40 h-14 text-xl rounded-lg bg-[#FB2B8F] text-white font-medium hover:opacity-90 transition">
-                Book a Call
-              </button>
-            </StyledWrapper>
+            <StyledWrapper />
           </div>
         </div>
       </div>
