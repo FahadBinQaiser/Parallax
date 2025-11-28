@@ -14,9 +14,7 @@ export default function HeroSection() {
       </h1>
       <p className="px-6 sm:px-0 text-lg sm:text-2xl text-center max-w-xl font-medium">
         Automate repetitive tasks with an AI Agent built for SaaS teams{" "}
-        <span className="sm:block">
-          so your people focus on strategy, not busywork.
-        </span>
+        <span className="sm:block">so your people focus on strategy</span>
       </p>
       <StyledWrapper>
         <button className="btn"></button>

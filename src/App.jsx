@@ -5,7 +5,16 @@ import HeroSection from "./components/HeroSection/HeroSection";
 function App() {
   return (
     <>
-      <HeroSection />
+      <div className="bg">
+        <Navbar />
+        <HeroSection />
+        <LogoSection />
+      </div>
+      <ProblemSection />
+      <SolutionSection />
+      <FeatureSection />
+      <TestimonialSection />
+      <PricingSection />
     </>
   );
 }
