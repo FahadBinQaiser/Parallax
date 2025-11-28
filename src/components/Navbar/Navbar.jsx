@@ -27,7 +27,7 @@ export default function Navbar() {
         </div>
 
         <div className="flex md:hidden pl-4 pr-1">
-          <Button text="Start Automating" />
+          <Button text="Start Automating" width="full" />
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-2xl cursor-pointer text-white"
@@ -52,7 +52,7 @@ export default function Navbar() {
                 Request a demo
               </a>
             </div>
-            <Button text="Start Automating" />/
+            <Button text="Start Automating" width="full" />
           </div>
         </div>
       </div>
