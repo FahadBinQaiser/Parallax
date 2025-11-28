@@ -1,17 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 
-const Button = () => {
+const Button = ({
+  text = "See what gets automated",
+  className = "",
+  width,
+}) => {
   return (
-    <StyledWrapper>
-      <button className="btn">See what gets automated</button>
+    <StyledWrapper width={width}>
+      <button className={`btn ${className}`}>{text}</button>
     </StyledWrapper>
   );
 };
 
 const StyledWrapper = styled.div`
   .btn {
-    width: 8em;
+    width: ${(props) => props.width || "11em"};
+    padding: 0 1.3em;
     height: 2.7em;
     margin: 0.5em;
     background: #fb2b8f;
@@ -23,6 +28,7 @@ const StyledWrapper = styled.div`
     position: relative;
     z-index: 1;
     overflow: hidden;
+    font-size: 1.2rem;
   }
 
   button:hover {

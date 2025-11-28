@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import StyledWrapper from "../UI_Components/StyledWrapper";
+import Button from "../UI_Components/StyledWrapper";
 import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
@@ -23,11 +23,11 @@ export default function Navbar() {
               Request a demo
             </a>
           </div>
-          <StyledWrapper />
+          <Button text="Start Automating" width="9em" />
         </div>
 
         <div className="flex md:hidden pl-4 pr-1">
-          <StyledWrapper />
+          <Button text="Start Automating" />
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-2xl cursor-pointer text-white"
@@ -52,7 +52,7 @@ export default function Navbar() {
                 Request a demo
               </a>
             </div>
-            <StyledWrapper />
+            <Button text="Start Automating" />/
           </div>
         </div>
       </div>
