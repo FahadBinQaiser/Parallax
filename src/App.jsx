@@ -12,9 +12,11 @@ import PricingSection from "./components/PricingSection/PricingSection";
 function App() {
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <LogoSection />
+      <div className="bg">
+        <Navbar />
+        <HeroSection />
+        <LogoSection />
+      </div>
       <ProblemSection />
       <SolutionSection />
       <FeatureSection />
