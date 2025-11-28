@@ -19,7 +19,7 @@ export default function HeroSection() {
         </span>
       </p>
       <StyledWrapper>
-        <button className="btn">See how it works</button>
+        <button className="btn"></button>
       </StyledWrapper>
     </div>
   );
