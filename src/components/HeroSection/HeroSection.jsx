@@ -4,13 +4,14 @@ export default function HeroSection() {
   return (
     <div className="heroSection flex flex-col text-[#000000]/70 gap-5 justify-center items-center h-[85vh]">
       <p className="text-lg sm:text-2xl text-center max-w-xl font-medium">
-        Trusted by 50+ SaaS teams worldwide
+        Trusted by growth-focused SaaS teams worldwide
       </p>
-      <h1 className="text-5xl sm:text-6xl md:text-7xl  text-center font-bold text-balance max-w-3xl">
-        Stop losing your team to {""}
-        <span className="bg-[#FB2B8F] my-2 inline-block px-2 text-white">
-          busywork
-        </span>
+      <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-center font-bold text-balance">
+        Your{" "}
+        <span className="bg-[#FB2B8F] inline-block px-2 text-white">
+          AI teammate
+        </span>{" "}
+        <span className="lg:block">that never sleeps.</span>
       </h1>
       <p className="px-6 sm:px-0 text-lg sm:text-2xl text-center max-w-xl font-medium">
         Automate repetitive tasks with an AI Agent built for SaaS teams{" "}
@@ -19,7 +20,7 @@ export default function HeroSection() {
         </span>
       </p>
       <StyledWrapper>
-        <button className="btn">See how it works</button>
+        <button className="btn">Book a Call</button>
       </StyledWrapper>
     </div>
   );
