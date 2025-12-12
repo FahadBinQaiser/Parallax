@@ -43,9 +43,9 @@ export default function ProblemSection() {
           {problems.map(({ icon, title, desc }, idx) => (
             <div
               key={idx}
-              className="flex items-start gap-4 bg-transparent rounded-2xl p-6 hover:bg-pink-100 transition"
+              className="flex items-start gap-4 bg-transparent rounded-2xl py-2 sm:p-4 hover:bg-pink-100 transition"
             >
-              <div className="p-3 bg-pink-200/60 rounded-full flex items-center mt-7 justify-center">
+              <div className="p-3 bg-pink-200/60 order-2 sm:order-0 rounded-full flex items-center mt-7 justify-center">
                 {icon}
               </div>
               <div>
