@@ -16,6 +16,7 @@ body {
   font-family: "SF Pro Display", sans-serif;
   background-color: #f2e8cf;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 .heading {
