@@ -6,7 +6,7 @@ const Card = ({ icon, title, desc }) => {
       <span className="absolute top-0 -left-0 z-0 h-24 w-full bg-[#FB2B8F] opacity-75 transition-all duration-500 transform group-hover:scale-[20]" />
 
       <div className="relative z-10 mx-auto">
-        <span className="grid h-24 w-24 place-items-center rounded-full bg-pink-200 transition-all duration-500 transform group-hover:from-pink-500 group-hover:to-yellow-500">
+        <span className="grid h-20 w-20 place-items-center rounded-full bg-pink-200 transition-all duration-500 transform group-hover:from-pink-500 group-hover:to-yellow-500">
           {icon}
         </span>
 
