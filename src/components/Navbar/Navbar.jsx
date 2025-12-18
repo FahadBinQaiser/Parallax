@@ -54,7 +54,7 @@ export default function Navbar() {
 
         <div
           className={`fixed top-24 right-6 w-64 h-96 rounded-xl bg-black/90 z-50
-          transition-all duration-300 ease-in-out flex items-center justify-center
+          transition-all mt-4 duration-300 ease-in-out flex items-center justify-center
           ${
             isOpen
               ? "translate-x-0 opacity-100"
