@@ -49,7 +49,7 @@ export default function ProblemSection() {
                 {icon}
               </div>
               <div>
-                <h3 className="text-3xl font-semibold">{title}</h3>
+                <h3 className="text-xl font-semibold">{title}</h3>
                 <p className="text-sm mt-2 leading-relaxed">{desc}</p>
               </div>
             </div>
