@@ -77,7 +77,7 @@ export default function AnimatedTimeline({ steps }) {
   }, []);
 
   return (
-    <div ref={sectionRef} className="relative min-h-[80vh] md:min-h-[120vh]">
+    <div ref={sectionRef} className="relative min-h-[80vh] md:min-h-full">
       <div className="hidden md:block absolute left-1/2 top-0 w-1 bg-[#FB6F92]/20 h-full -translate-x-1/2">
         <div ref={lineRef} className="w-full bg-[#FB6F92] origin-top"></div>
       </div>
