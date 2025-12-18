@@ -13,6 +13,17 @@ export default function Navbar() {
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768 && isOpen) {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [isOpen]);
+
   return (
     <nav className="w-full py-4">
       <div className="relative max-w-sm md:max-w-2xl h-20 px-5 rounded-xl bg-black/70 mx-auto flex items-center justify-between">
