@@ -12,7 +12,7 @@ const Card = ({ icon, title, desc }) => {
 
         <div className="space-y-4 pt-6 text-lg leading-8 text-gray-700 transition-all duration-500 group-hover:text-white">
           <h3 className="text-4xl font-bold">{title}</h3>
-          <p>{desc}</p>
+          <p className="text-pretty text-lg font-medium">{desc}</p>
         </div>
       </div>
     </div>
