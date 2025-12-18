@@ -24,7 +24,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="py-16 md:py-24 px-6 bg-[#E5D4B8] relative">
+    <section className="py-16 md:py-24 px-6 relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 md:mb-24">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-[#000000] mb-4 md:mb-6 leading-tight">
