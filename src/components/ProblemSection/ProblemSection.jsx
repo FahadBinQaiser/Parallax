@@ -28,7 +28,7 @@ export default function ProblemSection() {
           <span className="inline-block text-sm font-medium px-3 py-1 bg-pink-100 border border-pink-200 rounded-full text-[#FB2B8F]">
             The problem
           </span>
-          <h1 className="text-4xl heading">
+          <h1 className="text-4xl text-balance heading">
             The problem with growth? <br />
             <span className="text-[#FB2B8F]">Too many moving parts.</span>
           </h1>
