@@ -26,7 +26,7 @@ export default function SolutionSection() {
     <section className="text-[#000000]/70 py-20 px-5 xl:px-0">
       <div className="max-w-6xl space-y-6 mx-auto text-center">
         <div className="contentText py-6">
-          <h1 className="text-5xl text-balance sm:text-6xl md:text-6xl font-bold">
+          <h1 className="text-5xl text-balance sm:text-6xl font-bold">
             What happens when you{" "}
             <span className="highlight text-[#FB2B8F]">automate busywork</span>
           </h1>
