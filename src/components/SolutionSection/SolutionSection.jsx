@@ -49,7 +49,7 @@ export default function SolutionSection() {
           ))}
         </div>
 
-        <p className="text-lg md:text-2xl max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
           This isn’t just automation. It removes the work draining your team
           every week so they can focus on execution, not cleanup.
         </p>
