@@ -25,13 +25,13 @@ export default function HowItWorks() {
 
   return (
     <section className="py-16 md:py-24 px-6 relative">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto text-[#000000]/70">
         <div className="text-center mb-16 md:mb-24">
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-[#000000] mb-4 md:mb-6 leading-20">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 leading-20">
             Setup in <span className="text-[#FB6F92]">minutes</span>,<br />
             not months
           </h2>
-          <p className="text-lg md:text-xl lg:text-2xl text-[#000000]/70 font-medium">
+          <p className="text-lg md:text-xl lg:text-2xl font-medium">
             No engineers required. No technical debt created.
           </p>
         </div>
