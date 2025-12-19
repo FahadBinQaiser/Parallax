@@ -26,11 +26,11 @@ export default function SolutionSection() {
     <section className="text-[#000000]/70 py-20 px-5 xl:px-0">
       <div className="max-w-6xl space-y-6 mx-auto text-center">
         <div className="contentText py-6">
-          <h1 className="text-5xl text-balance sm:text-6xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-5xl text-balance sm:text-6xl md:text-6xl font-bold">
             What happens when you{" "}
             <span className="highlight text-[#FB2B8F]">automate busywork</span>
           </h1>
-          <p className="text-xl pt-2 font-medium">
+          <p className="text-xl pt-4 font-medium">
             Real numbers from teams who stopped wasting time
           </p>
         </div>
@@ -49,7 +49,7 @@ export default function SolutionSection() {
           ))}
         </div>
 
-        <p className="text-lg md:text-2xl max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
           This isn’t just automation. It removes the work draining your team
           every week so they can focus on execution, not cleanup.
         </p>
