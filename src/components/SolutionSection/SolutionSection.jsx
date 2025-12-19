@@ -54,7 +54,7 @@ export default function SolutionSection() {
           every week so they can focus on execution, not cleanup.
         </p>
 
-        <StyledWrapper />
+        <StyledWrapper width={"full"} />
       </div>
     </section>
   );
