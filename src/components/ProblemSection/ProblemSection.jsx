@@ -28,14 +28,14 @@ export default function ProblemSection() {
           <span className="inline-block text-sm font-medium px-3 py-1 bg-pink-100 border border-pink-200 rounded-full text-[#FB2B8F]">
             The problem
           </span>
-          <h1 className="text-4xl sm:text-5xl font-bold leading-tight">
+          <h1 className="text-4xl text-balance heading">
             The problem with growth? <br />
             <span className="text-[#FB2B8F]">Too many moving parts.</span>
           </h1>
           <p className="text-lg font-medium">
-            Each new customer means 47 manual steps. Customer onboarding, data
-            entry, follow-ups, reporting. Your team didn't sign up to be human
-            API connectors. They signed up to build something that matters.
+            Your revenue doubled, but your team didn’t. Manual work exploded,
+            onboarding takes hours, data is everywhere, and product is
+            babysitting spreadsheets.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export default function ProblemSection() {
                 {icon}
               </div>
               <div>
-                <h3 className="text-3xl font-semibold">{title}</h3>
+                <h3 className="text-xl font-semibold">{title}</h3>
                 <p className="text-sm mt-2 leading-relaxed">{desc}</p>
               </div>
             </div>
