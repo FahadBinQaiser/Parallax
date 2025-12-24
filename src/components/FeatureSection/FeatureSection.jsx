@@ -53,7 +53,7 @@ export default function FeaturesSection() {
                 </div>
 
                 <h3
-                  className="text-3xl text-balance md:text-4xl font-semibold leading-snug 
+                  className="text-3xl text-balance font-semibold 
                   transition-colors duration-300 group-hover:text-[#FB6F92]"
                 >
                   {title}
