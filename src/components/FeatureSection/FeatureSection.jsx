@@ -7,25 +7,25 @@ export default function FeaturesSection() {
     {
       icon: <Workflow className="text-[#FB6F92] w-8 h-8" />,
       title: "Customer onboarding from hell",
-      desc: "47 steps across 6 tools, perfectly executed every single time. Create accounts, send emails, set up integrations, notify teams, update dashboards. Zero manual work. Zero forgotten steps. Your new customers get a flawless experience while your team does literally nothing.",
+      desc: "Automate every onboarding step across all tools. Accounts, emails, integrations, updates. Nothing missed. No manual work.",
       size: "lg:col-span-2 lg:row-span-1 md:col-span-2",
     },
     {
       icon: <Settings2 className="text-[#FB6F92] w-8 h-8" />,
       title: "Data that lives everywhere",
-      desc: "Customer closed in Salesforce but your product team works in Notion? Deal details need to flow to Asana, Slack, and your data warehouse? Your AI teammate keeps everything in sync in real-time. No more let me check three places for that info.",
+      desc: "Keep Salesforce, Notion, Asana, Slack, and your warehouse in sync automatically. One source of truth in real time.",
       size: "lg:col-span-1 lg:row-span-2 md:col-span-2 md:row-span-1",
     },
     {
       icon: <Clock className="text-[#FB6F92] w-8 h-8" />,
       title: "Reports nobody wants to pull",
-      desc: "Weekly metrics, monthly summaries, executive dashboards. Your AI teammate pulls the data, formats it correctly, posts it to Slack, and sends it to stakeholders. Every Monday at 9am. Forever. Your team never touches a spreadsheet again.",
+      desc: "Automated reports sent on schedule. Metrics collected, formatted, and delivered without spreadsheets.",
       size: "xl:col-span-1 lg:col-span-2 lg:row-span-1 md:col-span-1",
     },
     {
       icon: <Users2 className="text-[#FB6F92] w-8 h-8" />,
       title: "The boring stuff that causes fires",
-      desc: "Ticket routing. Follow-up emails. Status updates. Contract renewals. The 100 small tasks that slip through the cracks and become emergencies. Your AI teammate doesn't let things slip. It just handles them.",
+      desc: "Tickets, follow ups, renewals, updates. The small tasks handled automatically before they become problems.",
       size: "xl:col-span-1 lg:col-span-3 lg:row-span-1 md:col-span-1",
     },
   ];
@@ -53,7 +53,7 @@ export default function FeaturesSection() {
                 </div>
 
                 <h3
-                  className="text-3xl md:text-4xl font-semibold leading-snug 
+                  className="text-3xl text-balance md:text-4xl font-semibold leading-snug 
                   transition-colors duration-300 group-hover:text-[#FB6F92]"
                 >
                   {title}
