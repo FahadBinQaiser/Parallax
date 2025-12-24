@@ -6,16 +6,24 @@ import LogoSection from "./components/LogoSection/LogoSection";
 import ProblemSection from "./components/ProblemSection/ProblemSection";
 import SolutionSection from "./components/SolutionSection/SolutionSection";
 import FeatureSection from "./components/FeatureSection/FeatureSection";
+import TestimonialSection from "./components/TestimonialSection/TestimonialSection";
+import PricingSection from "./components/PricingSection/PricingSection";
+import HowItWorks from "./components/HowItWorks/HowItWorks";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <LogoSection />
+      <div className="bg">
+        <Navbar />
+        <HeroSection />
+        <LogoSection />
+      </div>
       <ProblemSection />
+      <HowItWorks />
       <SolutionSection />
       <FeatureSection />
+      <TestimonialSection />
+      <PricingSection />
     </>
   );
 }
