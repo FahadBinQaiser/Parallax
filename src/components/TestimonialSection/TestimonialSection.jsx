@@ -3,34 +3,34 @@ import React from "react";
 export default function Testimonials() {
   const testimonials = [
     {
-      name: "Hikmet Atçeken",
-      handle: "@hiatceken",
-      text: "Parallax's our daily tool to bypass averages and reveal true insights, for the whole team!",
+      name: "Michael Sanchez",
+      handle: "Operations Lead @GrowthCo",
+      text: "Onboarding dropped from 6 hours to 8 minutes. Zero manual work. Paid for itself in the first week.",
     },
     {
-      name: "Arda Guler",
-      handle: "@ardaguler_",
-      text: "Parallax levels the analytics field for our team, enabling both beginners and pros to uncover the insights that truly shape our marketing strategies.",
+      name: "Sofia Patel",
+      handle: "Head of CS @Streamline",
+      text: "Set up in 18 minutes. Saved 12 hours a week. Customer response time dropped from 4 hours to 12 minutes.",
     },
     {
-      name: "Maria Ancelotti",
-      handle: "@maria_ancelotti",
-      text: "From novice to pro, Parallax helps our team uncover the extraordinary in our marketing data!",
+      name: "James Wu",
+      handle: "Co-founder @DataSync",
+      text: "Scaled from 50 to 200 customers without adding headcount. Got our nights and weekends back.",
     },
     {
-      name: "Ragip Diler",
-      handle: "@rgdiler",
-      text: "Parallax empowers our whole team, techies or not, to dive into analytics and spot the insights that really matter—no more average data!",
+      name: "Alex Sanderson",
+      handle: "VP of Ops @ScaleUp",
+      text: "Non-technical team built 12 workflows in week one. Full onboarding live in 45 minutes.",
     },
     {
-      name: "Jenny Wilson",
-      handle: "@wilson_jenny19",
-      text: "Parallax's user-friendly analytics let our whole team bypass averages to uncover real, game-changing insights every day.",
+      name: "Nina Lee",
+      handle: "Customer Success Manager @RenewIt",
+      text: "Saved 3 months of engineering time for $299/month. Engineers focus on shipping product.",
     },
     {
-      name: "Guy Hawkins",
-      handle: "@ghawkins",
-      text: "Parallax is a game-changer—easy for beginners and powerful for pros to dig beyond averages and drive real strategy!",
+      name: "Steve Davis",
+      handle: "Revenue Operations @TechSolutions",
+      text: "Cut manual work from 23 hours to 4 per week. Improved ROI in 11 days.",
     },
   ];
 
@@ -40,11 +40,13 @@ export default function Testimonials() {
         <span className="inline-block mb-4 text-sm font-medium px-3 py-1 bg-pink-100 border border-pink-200 rounded-full text-[#FB2B8F]">
           Testimonials
         </span>
-        <h2 className="text-3xl font-bold sm:text-7xl">
+        <h2 className="text-3xl font-bold sm:text-6xl">
           Public <span className="highlight text-[#FB2B8F]">Cheers</span> for
           Us!
         </h2>
-        <p className="mt-3">Find out how our users are spreading the word!</p>
+        <p className="mt-3">
+          Real results from teams who stopped doing busywork
+        </p>
 
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
           {testimonials.map((t, i) => (
