@@ -8,10 +8,15 @@ const PricingCard = ({
   features,
   buttonText,
   isPopular,
+  isTransparent,
 }) => {
   return (
     <StyledWrapper>
-      <div className={`card ${isPopular ? "popular-card" : ""}`}>
+      <div
+        className={`card ${isPopular ? "popular-card" : ""} ${
+          isTransparent ? "transparent-card" : ""
+        }`}
+      >
         {isPopular && <div className="popular">Most Popular</div>}
         <div className="pricing-tooltip">{price}</div>
         <div className="card__border" />
@@ -119,6 +124,7 @@ const StyledWrapper = styled.div`
 
   .card_title__container .card_title {
     font-size: 2rem;
+    font-weight: bold;
     color: var(--white);
   }
 
@@ -203,6 +209,55 @@ const StyledWrapper = styled.div`
     .list_text {
       font-size: 0.95rem;
     }
+  }
+  .transparent-card {
+    background: transparent;
+    background-image: none;
+    box-shadow: none;
+    border: 2px solid rgba(251, 43, 143, 0.4);
+  }
+
+  .transparent-card .pricing-tooltip {
+    border-top-right-radius: 1px solid rgba(251, 43, 143, 0.4);
+    background: rgba(251, 43, 143, 0.6);
+    box-shadow: none;
+  }
+
+  .transparent-card .button {
+    background: rgba(251, 43, 143, 0.4);
+    border: 1px solid #fb2b8f;
+    box-shadow: none;
+  }
+
+  .transparent-card {
+    color: #000000/70;
+  }
+
+  .transparent-card .card_title,
+  .transparent-card .card_paragraph,
+  .transparent-card .list_text {
+    color: #000;
+    opacity: 0.7;
+  }
+
+  .transparent-card .pricing-tooltip {
+    color: #000;
+    opacity: 0.7;
+  }
+
+  .transparent-card .button {
+    color: #000;
+    opacity: 0.7;
+  }
+
+  .transparent-card .check {
+    background-color: #000;
+    opacity: 0.7;
+  }
+
+  .transparent-card .check_svg {
+    fill: #fff;
+    opacity: 0.7;
   }
 
   @media (max-width: 768px) {

@@ -24,6 +24,7 @@ export default function PricingSection() {
               "Email + Slack support",
             ]}
             buttonText="Buy Starter Automation"
+            isTransparent
           />
 
           <PricingCard
