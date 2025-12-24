@@ -1,29 +1,30 @@
 import React from "react";
 import Gradient from "../UI_Components/Gradient";
-import { Workflow, Settings2, Clock, Users2 } from "lucide-react";
+import { Workflow, RefreshCw, BarChart3, AlertTriangle } from "lucide-react";
 
 export default function FeaturesSection() {
+  const icon_class = "text-[#FB6F92] w-7 h-7";
   const features = [
     {
-      icon: <Workflow className="text-[#FB6F92] w-8 h-8" />,
+      icon: <Workflow className={icon_class} />,
       title: "Customer onboarding from hell",
       desc: "Automate every onboarding step across all tools. Accounts, emails, integrations, updates. Nothing missed. No manual work.",
       size: "lg:col-span-2 lg:row-span-1 md:col-span-2",
     },
     {
-      icon: <Settings2 className="text-[#FB6F92] w-8 h-8" />,
+      icon: <RefreshCw className={icon_class} />,
       title: "Data that lives everywhere",
       desc: "Keep Salesforce, Notion, Asana, Slack, and your warehouse in sync automatically. One source of truth in real time.",
       size: "lg:col-span-1 lg:row-span-2 md:col-span-2 md:row-span-1",
     },
     {
-      icon: <Clock className="text-[#FB6F92] w-8 h-8" />,
+      icon: <BarChart3 className={icon_class} />,
       title: "Reports nobody wants to pull",
       desc: "Automated reports sent on schedule. Metrics collected, formatted, and delivered without spreadsheets.",
       size: "xl:col-span-1 lg:col-span-2 lg:row-span-1 md:col-span-1",
     },
     {
-      icon: <Users2 className="text-[#FB6F92] w-8 h-8" />,
+      icon: <AlertTriangle className={icon_class} />,
       title: "The boring stuff that causes fires",
       desc: "Tickets, follow ups, renewals, updates. The small tasks handled automatically before they become problems.",
       size: "xl:col-span-1 lg:col-span-3 lg:row-span-1 md:col-span-1",
@@ -53,12 +54,12 @@ export default function FeaturesSection() {
                 </div>
 
                 <h3
-                  className="text-3xl text-balance font-semibold 
+                  className="text-2xl text-balance font-semibold 
                   transition-colors duration-300 group-hover:text-[#FB6F92]"
                 >
                   {title}
                 </h3>
-                <p className="mt-3 text-sm sm:text-base md:text-lg">{desc}</p>
+                <p className="mt-3 text-sm sm:text-base">{desc}</p>
               </Gradient>
             </div>
           ))}
