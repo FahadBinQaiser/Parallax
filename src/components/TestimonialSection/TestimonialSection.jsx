@@ -35,16 +35,16 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="py-20 text-[#000000]/70 from-orange-50 to-yellow-50">
+    <section className="py-20 font-medium text-white from-orange-50 to-yellow-50">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <span className="inline-block mb-4 text-sm font-medium px-3 py-1 bg-pink-100 border border-pink-200 rounded-full text-[#FB2B8F]">
+        <span className="inline-block mb-4 text-sm px-3 py-1 bg-pink-100 border border-pink-200 rounded-full text-[#FB2B8F]">
           Testimonials
         </span>
-        <h2 className="text-3xl font-bold sm:text-6xl">
+        <h2 className="text-3xl font-bold text-[#000000]/70 sm:text-6xl">
           Public <span className="highlight text-[#FB2B8F]">Cheers</span> for
           Us!
         </h2>
-        <p className="mt-3">
+        <p className="mt-3 text-[#000000]/70">
           Real results from teams who stopped doing busywork
         </p>
 
@@ -52,39 +52,18 @@ export default function Testimonials() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className={`relative backdrop-blur-sm hover:scale-105 transition-all duration-300 p-6 text-left rounded-xl
-                ${
-                  i % 2 === 0
-                    ? "bg-[#FB2B8F] shadow-[8px_8px_0px_0px_rgba(0,0,0,0.7)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,0.7)]"
-                    : "shadow-xl hover:shadow-2xl bg-gradient-to-tr from-[#f2e8cf] via-[#f8f0db] to-[#fff9f0]"
-                }`}
+              className={`relative backdrop-blur-sm hover:scale-105 transition-all duration-300 p-6 text-left rounded-xl bg-[#FB2B8F] shadow-[8px_8px_0px_0px_rgba(0,0,0,0.7)] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,0.7)]`}
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
-                  <p
-                    className={`font-semibold text-xl ${
-                      i % 2 === 0 ? "text-white" : "text-gray-900"
-                    }`}
-                  >
-                    {t.name}
-                  </p>
-                  <p
-                    className={`text-sm ${
-                      i % 2 === 0 ? "text-white/80" : "text-gray-500"
-                    }`}
-                  >
-                    {t.handle}
-                  </p>
+                  <p className={`font-semibold text-xl`}>{t.name}</p>
+                  <p className={`text-sm`}>{t.handle}</p>
                 </div>
                 <div
-                  className={`w-8 h-8 rounded-full flex items-center justify-center ${
-                    i % 2 === 0 ? "bg-white/20" : "bg-gray-100"
-                  }`}
+                  className={`w-8 h-8 rounded-full flex items-center bg-white justify-center`}
                 >
                   <svg
-                    className={`w-4 h-4 ${
-                      i % 2 === 0 ? "text-white" : "text-gray-600"
-                    }`}
+                    className={`w-4 h-4 text-black`}
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -92,11 +71,7 @@ export default function Testimonials() {
                   </svg>
                 </div>
               </div>
-              <p
-                className={`text-base leading-relaxed ${
-                  i % 2 === 0 ? "text-white/95" : "text-[#000000]/70"
-                }`}
-              >
+              <p className={`text-base leading-relaxed text-white/95`}>
                 {t.text}
               </p>
             </div>
