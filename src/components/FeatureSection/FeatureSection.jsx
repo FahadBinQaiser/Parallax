@@ -35,7 +35,7 @@ export default function FeaturesSection() {
     <section className="text-[#000000]/70 py-20 px-6 xl:px-0">
       <div className="max-w-5xl mx-auto space-y-12">
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-balance text-center">
-          What our <span className="text-[#FB6F92]">AI agent</span> handles
+          What our <span className="text-[#FB2B8F]">AI agent</span> handles
           <br /> so you don’t have to:
         </h2>
 
