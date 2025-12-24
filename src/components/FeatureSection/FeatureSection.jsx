@@ -6,26 +6,26 @@ export default function FeaturesSection() {
   const features = [
     {
       icon: <Workflow className="text-[#FB6F92] w-8 h-8" />,
-      title: "Automation that just works",
-      desc: "No complicated setups. Just connect it once, and your workflows run smoothly in the background. The agent keeps everything moving without you lifting a finger.",
+      title: "Customer onboarding from hell",
+      desc: "47 steps across 6 tools, perfectly executed every single time. Create accounts, send emails, set up integrations, notify teams, update dashboards. Zero manual work. Zero forgotten steps. Your new customers get a flawless experience while your team does literally nothing.",
       size: "lg:col-span-2 lg:row-span-1 md:col-span-2",
     },
     {
       icon: <Settings2 className="text-[#FB6F92] w-8 h-8" />,
-      title: "Your workflows and rules",
-      desc: "Every team has its own way of working, this AI adapts to yours. You set the rules, the priorities, and the pace, and it follows through with zero distractions or wasted steps.",
+      title: "Data that lives everywhere",
+      desc: "Customer closed in Salesforce but your product team works in Notion? Deal details need to flow to Asana, Slack, and your data warehouse? Your AI teammate keeps everything in sync in real-time. No more let me check three places for that info.",
       size: "lg:col-span-1 lg:row-span-2 md:col-span-2 md:row-span-1",
     },
     {
       icon: <Clock className="text-[#FB6F92] w-8 h-8" />,
-      title: "Always on reliability",
-      desc: "It doesn’t sleep, forget, or burn out. Tasks are executed consistently, day and night, giving you complete confidence that nothing slips through the cracks.",
+      title: "Reports nobody wants to pull",
+      desc: "Weekly metrics, monthly summaries, executive dashboards. Your AI teammate pulls the data, formats it correctly, posts it to Slack, and sends it to stakeholders. Every Monday at 9am. Forever. Your team never touches a spreadsheet again.",
       size: "xl:col-span-1 lg:col-span-2 lg:row-span-1 md:col-span-1",
     },
     {
       icon: <Users2 className="text-[#FB6F92] w-8 h-8" />,
-      title: "Built for teams",
-      desc: "Deadlines, launches, last-minute pivots — the agent keeps up with it all. It takes care of the repetitive tasks so your people can focus on momentum and results.",
+      title: "The boring stuff that causes fires",
+      desc: "Ticket routing. Follow-up emails. Status updates. Contract renewals. The 100 small tasks that slip through the cracks and become emergencies. Your AI teammate doesn't let things slip. It just handles them.",
       size: "xl:col-span-1 lg:col-span-3 lg:row-span-1 md:col-span-1",
     },
   ];
