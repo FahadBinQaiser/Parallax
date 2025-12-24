@@ -40,7 +40,7 @@ export default function Testimonials() {
         <span className="inline-block mb-4 text-sm px-3 py-1 bg-pink-100 border border-pink-200 rounded-full text-[#FB2B8F]">
           Testimonials
         </span>
-        <h2 className="text-3xl font-bold text-[#000000]/70 sm:text-6xl">
+        <h2 className="text-4xl text-balance font-bold text-[#000000]/70 sm:text-6xl">
           Public <span className="highlight text-[#FB2B8F]">Cheers</span> for
           Us!
         </h2>
