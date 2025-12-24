@@ -214,7 +214,7 @@ const StyledWrapper = styled.div`
     background: transparent;
     background-image: none;
     box-shadow: none;
-    border: 2px solid rgba(251, 43, 143, 0.4);
+    border: 2px solid hsl(340, 60%, 40%);
   }
 
   .transparent-card .pricing-tooltip {
@@ -230,29 +230,25 @@ const StyledWrapper = styled.div`
   }
 
   .transparent-card {
-    color: #000000;
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .transparent-card .card_title,
   .transparent-card .card_paragraph,
   .transparent-card .list_text {
-    color: #000;
-    opacity: 0.7;
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .transparent-card .pricing-tooltip {
-    color: #000;
-    opacity: 0.7;
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .transparent-card .button {
-    color: #000;
-    opacity: 0.7;
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .transparent-card .check {
-    background-color: #000;
-    opacity: 0.7;
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   .transparent-card .check_svg {
