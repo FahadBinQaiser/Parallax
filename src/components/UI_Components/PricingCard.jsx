@@ -230,7 +230,7 @@ const StyledWrapper = styled.div`
   }
 
   .transparent-card {
-    color: #000000/70;
+    color: #000000;
   }
 
   .transparent-card .card_title,
