@@ -63,7 +63,7 @@ export default function FaqSection() {
                 onClick={() => toggleFaq(index)}
                 className="w-full text-left py-6 flex justify-between items-center group"
               >
-                <h3 className="text-2xl font-bold group-hover:text-[#FB2B8F] transition-colors">
+                <h3 className="text-lg font-bold group-hover:text-[#FB2B8F] transition-colors">
                   {faq.question}
                 </h3>
                 <span
