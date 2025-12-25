@@ -7,7 +7,7 @@ export default function CtaSection() {
     <section className="relative h-[80vh] flex flex-col md:flex-row items-center justify-center text-center py-20 bg-gradient-to-b from-[#080008] via-[#0a0a0a] to-[#100010]">
       <RadialGradient />
       <div className="relative z-10 px-6 space-y-6 sm:px-8 md:px-16 text-white max-w-5xl mx-auto">
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl text-balance font-bold leading-tight">
+        <h2 className="text-3xl sm:text-5xl lg:text-6xl text-balance font-bold leading-tight">
           Stop managing tasks. Start{" "}
           <span className="text-[#fb2b8f]">managing growth.</span>
         </h2>

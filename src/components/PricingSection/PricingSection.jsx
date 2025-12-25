@@ -65,9 +65,9 @@ export default function PricingSection() {
           />
         </div>
 
-        <p className="text-sm sm:text-base md:text-lg text-[#000000]/60 font-medium px-4">
-          Need something we haven't thought of?{" "}
-          <a href="#" className="text-[#FB6F92] font-semibold hover:underline">
+        <p className="text-sm sm:text-base md:text-lg text-[#000000]/70 font-medium px-4">
+          Need something we haven't thought of?
+          <a href="#" className="text-[#FB2B8F] font-semibold hover:underline">
             Let's figure it out together
           </a>
         </p>
