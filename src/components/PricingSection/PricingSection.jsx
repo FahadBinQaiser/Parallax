@@ -3,44 +3,74 @@ import PricingCard from "../UI_Components/PricingCard";
 
 export default function PricingSection() {
   return (
-    <section className="py-16 sm:py-20 text-[#000000]/70 pricing-section">
-      <div className="max-w-7xl mx-auto space-y-10 px-4 sm:px-6 text-center">
-        <h2 className="text-balance text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-          Serious{" "}
-          <span className="highlight text-[#FB2B8F]">About Growth?</span> So Are
-          We
-        </h2>
+    <section className="py-12 sm:py-16 md:py-20 text-[#000000]/70 pricing-section bg-[#F5E6D3]">
+      <div className="max-w-7xl mx-auto space-y-12 md:space-y-16 px-4 sm:px-6 text-center">
+        <div className="contentPadding space-y-3 md:space-y-4">
+          <h2 className="text-balance max-w-3xl mx-auto text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold px-2">
+            Your team didn't sign up to{" "}
+            <span className="highlight text-[#FB2B8F]">Copy-Paste data</span>
+          </h2>
+          <p className="text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-medium px-2">
+            Pick the plan that gives them their actual job back
+          </p>
+        </div>
 
-        <div className="pricingCards mx-auto flex flex-col sm:flex-row md:flex-wrap justify-center items-center md:items-stretch gap-2 gap-y-10 sm:gap-y-4 md:gap-4 lg:gap-6 max-w-5xl">
+        <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl items-stretch">
           <PricingCard
             title="Starter Automation"
             price="$300"
-            paragraph="Perfect for small SaaS teams ready to offload manual work and free up time for strategy."
+            paragraph="Get 15+ hours back per week. Your ops person stops being a human API and starts improving processes."
             features={[
-              "Up to 5 automated workflows",
-              "Onboarding & setup support",
-              "Real-time task monitoring",
-              "Weekly performance insights",
-              "Email + Slack support",
+              "5 workflows killing your team daily",
+              "10,000 task executions per month",
+              "15 tools connected without duct tape",
+              "Live visibility into every automation",
+              "Setup support so nothing explodes",
+              "Perfect for teams under 20 people",
             ]}
-            buttonText="Buy Starter Automation"
+            buttonText="Get Your Time Back"
+            isTransparent
           />
 
           <PricingCard
             title="Growth Partner"
             price="$500"
-            paragraph="For scaling teams that want deeper integration, more automation, and dedicated guidance."
+            paragraph="For teams where people are burned out doing robot work and growth is starting to hurt."
             features={[
-              "Up to 15 automated workflows",
-              "Dedicated success manager",
-              "Advanced analytics dashboard",
-              "Priority integration updates",
-              "24/7 live support",
+              "Unlimited workflows across teams",
+              "100,000 executions without hiring",
+              "Any integration your stack needs",
+              "Analytics showing exact hours saved",
+              "2-hour support response, not days",
+              "Custom templates built for your chaos",
             ]}
-            buttonText="Buy Growth Partner"
+            buttonText="Scale Without the Pain"
             isPopular
           />
+
+          <PricingCard
+            title="Enterprise / Custom"
+            price="Custom"
+            paragraph="When automation is business-critical and off-the-shelf setups stop working."
+            features={[
+              "500k+ monthly task executions",
+              "Complex multi-team workflows",
+              "Custom logic, edge cases, safeguards",
+              "Dedicated strategy & implementation",
+              "White-glove onboarding",
+              "SLA guarantees and dedicated support",
+            ]}
+            buttonText="Talk to Us"
+            isTransparent
+          />
         </div>
+
+        <p className="text-sm sm:text-base md:text-lg text-[#000000]/60 font-medium px-4">
+          Need something we haven't thought of?{" "}
+          <a href="#" className="text-[#FB6F92] font-semibold hover:underline">
+            Let's figure it out together
+          </a>
+        </p>
       </div>
     </section>
   );

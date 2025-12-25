@@ -1,31 +1,32 @@
 import React from "react";
 import Gradient from "../UI_Components/Gradient";
-import { Workflow, Settings2, Clock, Users2 } from "lucide-react";
+import { Workflow, RefreshCw, BarChart3, AlertTriangle } from "lucide-react";
 
 export default function FeaturesSection() {
+  const icon_class = "text-[#FB6F92] w-7 h-7";
   const features = [
     {
-      icon: <Workflow className="text-[#FB6F92] w-8 h-8" />,
-      title: "Automation that just works",
-      desc: "No complicated setups. Just connect it once, and your workflows run smoothly in the background. The agent keeps everything moving without you lifting a finger.",
+      icon: <Workflow className={icon_class} />,
+      title: "Customer onboarding from hell",
+      desc: "Automate every onboarding step across all tools. Accounts, emails, integrations, updates. Nothing missed. No manual work.",
       size: "lg:col-span-2 lg:row-span-1 md:col-span-2",
     },
     {
-      icon: <Settings2 className="text-[#FB6F92] w-8 h-8" />,
-      title: "Your workflows and rules",
-      desc: "Every team has its own way of working, this AI adapts to yours. You set the rules, the priorities, and the pace, and it follows through with zero distractions or wasted steps.",
+      icon: <RefreshCw className={icon_class} />,
+      title: "Data that lives everywhere",
+      desc: "Keep Salesforce, Notion, Asana, Slack, and your warehouse in sync automatically. One source of truth in real time.",
       size: "lg:col-span-1 lg:row-span-2 md:col-span-2 md:row-span-1",
     },
     {
-      icon: <Clock className="text-[#FB6F92] w-8 h-8" />,
-      title: "Always on reliability",
-      desc: "It doesn’t sleep, forget, or burn out. Tasks are executed consistently, day and night, giving you complete confidence that nothing slips through the cracks.",
+      icon: <BarChart3 className={icon_class} />,
+      title: "Reports nobody wants to pull",
+      desc: "Automated reports sent on schedule. Metrics collected, formatted, and delivered without spreadsheets.",
       size: "xl:col-span-1 lg:col-span-2 lg:row-span-1 md:col-span-1",
     },
     {
-      icon: <Users2 className="text-[#FB6F92] w-8 h-8" />,
-      title: "Built for teams",
-      desc: "Deadlines, launches, last-minute pivots — the agent keeps up with it all. It takes care of the repetitive tasks so your people can focus on momentum and results.",
+      icon: <AlertTriangle className={icon_class} />,
+      title: "The boring stuff that causes fires",
+      desc: "Tickets, follow ups, renewals, updates. The small tasks handled automatically before they become problems.",
       size: "xl:col-span-1 lg:col-span-3 lg:row-span-1 md:col-span-1",
     },
   ];
@@ -33,8 +34,8 @@ export default function FeaturesSection() {
   return (
     <section className="text-[#000000]/70 py-20 px-6 xl:px-0">
       <div className="max-w-5xl mx-auto space-y-12">
-        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-balance text-center">
-          What our <span className="text-[#FB6F92]">AI agent</span> handles
+        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-balance text-center">
+          What our <span className="text-[#FB2B8F]">AI agent</span> handles
           <br /> so you don’t have to:
         </h2>
 
@@ -53,12 +54,12 @@ export default function FeaturesSection() {
                 </div>
 
                 <h3
-                  className="text-3xl md:text-4xl font-semibold leading-snug 
+                  className="text-2xl text-balance font-semibold 
                   transition-colors duration-300 group-hover:text-[#FB6F92]"
                 >
                   {title}
                 </h3>
-                <p className="mt-3 text-sm sm:text-base md:text-lg">{desc}</p>
+                <p className="mt-3 text-sm sm:text-base">{desc}</p>
               </Gradient>
             </div>
           ))}
