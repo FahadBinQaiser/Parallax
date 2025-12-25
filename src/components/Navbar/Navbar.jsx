@@ -25,7 +25,7 @@ export default function Navbar() {
   }, [isOpen]);
 
   return (
-    <nav className="w-full py-4">
+    <nav className="w-full px-4 py-4">
       <div className="relative max-w-sm md:max-w-2xl h-20 pl-5 pr-3 rounded-xl bg-black/70 mx-auto flex items-center justify-between">
         <h1 className="text-3xl text-white">Parallax</h1>
 
