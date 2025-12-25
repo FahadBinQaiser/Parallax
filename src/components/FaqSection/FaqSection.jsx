@@ -44,10 +44,9 @@ export default function FaqSection() {
     <section className="py-20 px-6">
       <div className="max-w-5xl mx-auto text-[#000000]/70">
         <div className="text-center mb-16 md:mb-24">
-          <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6">
-            Questions?
-            <br />
-            <span className="text-[#FB2B8F]">Answered.</span>
+          <h2 className="text-5xl sm:text-6xl text-balance font-bold mb-6">
+            Everything you're{" "}
+            <span className="text-[#FB2B8F]">wondering about</span>
           </h2>
         </div>
 
@@ -59,7 +58,7 @@ export default function FaqSection() {
             >
               <button
                 onClick={() => toggleFaq(index)}
-                className="w-full text-left py-6 flex justify-between items-center gap-8 group"
+                className="w-full text-left py-6 flex justify-between items-center group"
               >
                 <h3 className="text-2xl font-bold group-hover:text-[#FB2B8F] transition-colors">
                   {faq.question}
