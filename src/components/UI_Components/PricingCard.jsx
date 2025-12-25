@@ -214,7 +214,7 @@ const StyledWrapper = styled.div`
     background: transparent;
     background-image: none;
     box-shadow: none;
-    border: 1px solid rgba(251, 43, 143, 0.7);
+    border: 1px solid rgba(251, 43, 143, 0.4);
   }
 
   .transparent-card .pricing-tooltip {
