@@ -10,6 +10,7 @@ import TestimonialSection from "./components/TestimonialSection/TestimonialSecti
 import PricingSection from "./components/PricingSection/PricingSection";
 import CtaSection from "./components/CtaSection/CtaSection";
 import HowItWorks from "./components/HowItWorks/HowItWorks";
+import FaqSection from "./components/FaqSection/FaqSection";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <TestimonialSection />
       <PricingSection />
       <CtaSection />
+      <FaqSection />
     </>
   );
 }
