@@ -5,9 +5,11 @@ const Button = ({
   text = "See what gets automated",
   className = "",
   width,
+  padding = "0.875rem 2rem",
+  height = "auto",
 }) => {
   return (
-    <StyledWrapper width={width}>
+    <StyledWrapper width={width} padding={padding} height={height}>
       <button className={`btn ${className}`}>{text}</button>
     </StyledWrapper>
   );
@@ -15,20 +17,20 @@ const Button = ({
 
 const StyledWrapper = styled.div`
   .btn {
-    width: ${(props) => props.width || "11em"};
-    padding: 0 1.3em;
-    height: 2.7em;
-    margin: 0.5em;
+    width: ${(props) => props.width || "auto"};
+    padding: ${(props) => props.padding || "0.875rem 2rem"};
+    height: ${(props) => props.height || "auto"};
     background: #fb2b8f;
     color: white;
     border: none;
-    border-radius: 0.625em;
-    font-size: 20px;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 500;
     cursor: pointer;
     position: relative;
     z-index: 1;
     overflow: hidden;
-    font-size: 1.2rem;
+    white-space: nowrap;
   }
 
   button:hover {
@@ -50,7 +52,6 @@ const StyledWrapper = styled.div`
 
   button:hover:after {
     transform: skewX(-45deg) scale(1, 1);
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
 `;
