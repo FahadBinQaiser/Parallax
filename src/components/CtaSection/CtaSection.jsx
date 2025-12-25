@@ -4,29 +4,36 @@ import RadialGradient from "../UI_Components/RadialGradient";
 
 export default function CtaSection() {
   return (
-    <section className="relative h-full flex flex-col md:flex-row items-center justify-center text-center py-16 bg-gradient-to-b from-[#080008] via-[#0a0a0a] to-[#100010]">
+    <section className="relative h-full flex flex-col md:flex-row items-center justify-center text-center py-20 md:py-28 bg-gradient-to-b from-[#080008] via-[#0a0a0a] to-[#100010]">
       <RadialGradient />
-
-      <div className="relative z-10 px-8 sm:px-16 md:px-16 py-16 md:py-0 text-white space-y-3">
-        <h2 className="text-6xl text-balance md:text-6xl max-w-4xl mx-auto font-bold">
-          Stop wasting <span className="text-[#fb2b8f]">time on busywork</span>{" "}
-          Let AI handle it for you.
+      <div className="relative z-10 px-6 space-y-6 sm:px-8 md:px-16 text-white max-w-5xl mx-auto">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+          Stop managing tasks.
+          <br />
+          Start <span className="text-[#fb2b8f]">managing growth.</span>
         </h2>
 
-        <p className="text-gray-300 text-balance text-base sm:text-lg max-w-4xl mx-auto">
-          Your team can't waste hours on busywork. Let AI handle the repetitive
-          work so they can focus on the strategic work that actually grows your
-          business.
+        <p className="text-gray-300 text-lg sm:text-xl max-w-3xl mx-auto">
+          Your team is too valuable to waste on busywork. Let AI handle the
+          repetitive stuff so they can focus on the strategic work that actually
+          moves the needle.
         </p>
 
-        <div className="pt-6 flex flex-row justify-center items-center">
-          <button className="p-3 py-3.5 bg-black/20 text-white rounded-xl">
-            See what gets automated
+        <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <StyledWrapper
+            width="auto"
+            text="Start Free Trial"
+            padding="0.875rem 2rem"
+          />
+
+          <button className="px-8 py-3.5 bg-transparent border-2 border-white/30 text-white rounded-full font-semibold hover:bg-white/10 transition">
+            See How It Works
           </button>
-          <StyledWrapper width={"full"} text="Book a Call">
-            Book a Call
-          </StyledWrapper>
         </div>
+
+        <p className="text-gray-400 text-sm pt-2">
+          No credit card required. 14-day free trial. Cancel anytime.
+        </p>
       </div>
     </section>
   );
