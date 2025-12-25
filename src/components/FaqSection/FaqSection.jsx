@@ -44,16 +44,16 @@ export default function FaqSection() {
     <section className="py-20 px-6">
       <div className="max-w-5xl mx-auto text-[#000000]/70">
         <div className="text-center mb-10">
-          <h2 className="text-5xl sm:text-6xl text-balance font-bold mb-6">
+          <h2 className="text-4xl sm:text-6xl text-balance font-bold mb-6">
             Everything you're{" "}
             <span className="text-[#FB2B8F]">wondering about</span>
           </h2>
-          <p className="text-xl font-medium max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl font-medium max-w-3xl mx-auto">
             The answers you actually need before signing up
           </p>
         </div>
 
-        <div className="space-y-0">
+        <div className="space-y-0 px-4 sm:px-0">
           {faqs.map((faq, index) => (
             <div
               key={index}
