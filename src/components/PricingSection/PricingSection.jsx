@@ -4,12 +4,17 @@ import PricingCard from "../UI_Components/PricingCard";
 export default function PricingSection() {
   return (
     <section className="py-16 sm:py-20 text-[#000000]/70 pricing-section">
-      <div className="max-w-7xl mx-auto space-y-10 px-4 sm:px-6 text-center">
-        <h2 className="text-balance text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-          Serious{" "}
-          <span className="highlight text-[#FB2B8F]">About Growth?</span> So Are
-          We
-        </h2>
+      <div className="max-w-7xl mx-auto space-y-14 px-4 sm:px-6 text-center">
+        <div className="contentPadding space-y-4">
+          <h2 className="text-balance text-5xl md:text-6xl font-bold">
+            Serious{" "}
+            <span className="highlight text-[#FB2B8F]">About Growth?</span> So
+            Are We
+          </h2>
+          <p className="text-xl">
+            Choose the right plan for your business needs
+          </p>
+        </div>
 
         <div className="pricingCards mx-auto flex flex-col sm:flex-row md:flex-wrap justify-center items-center md:items-stretch gap-2 gap-y-10 sm:gap-y-4 md:gap-4 lg:gap-6 max-w-5xl">
           <PricingCard
