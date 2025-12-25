@@ -1,9 +1,11 @@
 import React from "react";
 import StyledWrapper from "../UI_Components/StyledWrapper";
+import RadialGradient from "../UI_Components/RadialGradient";
+
 export default function CtaSection() {
   return (
     <section className="relative h-full flex flex-col md:flex-row items-center justify-center text-center py-16 bg-gradient-to-b from-[#080008] via-[#0a0a0a] to-[#100010]">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(251,43,143,0.35)_0%,transparent_80%),radial-gradient(ellipse_at_bottom_left,rgba(255,110,196,0.2)_0%,transparent_90%)] pointer-events-none"></div>
+      <RadialGradient />
 
       <div className="relative z-10 px-8 sm:px-16 md:px-16 py-16 md:py-0 text-white space-y-3">
         <h2 className="text-6xl text-balance md:text-6xl max-w-4xl mx-auto font-bold">
