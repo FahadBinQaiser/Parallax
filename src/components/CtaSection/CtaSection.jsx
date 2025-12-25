@@ -12,14 +12,14 @@ export default function CtaSection() {
           <span className="text-[#fb2b8f]">managing growth.</span>
         </h2>
 
-        <p className="text-gray-300 text-lg sm:text-xl max-w-3xl mx-auto">
+        <p className="text-gray-300 text-balance text-lg sm:text-xl max-w-3xl mx-auto">
           Your team is too valuable to waste on busywork. Let AI handle the
           repetitive stuff so you can focus on the strategic work.
         </p>
 
         <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center items-center">
           <StyledWrapper
-            width="auto"
+            width="190px"
             text="Start Free Trial"
             padding="0.875rem 2rem"
           />
