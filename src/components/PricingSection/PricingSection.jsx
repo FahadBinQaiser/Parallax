@@ -15,7 +15,7 @@ export default function PricingSection() {
           </p>
         </div>
 
-        <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl items-stretch">
+        <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-8 max-w-7xl items-stretch">
           <PricingCard
             title="Starter Automation"
             price="$300"
