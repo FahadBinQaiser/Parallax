@@ -12,25 +12,50 @@ import CtaSection from "./components/CtaSection/CtaSection";
 import HowItWorks from "./components/HowItWorks/HowItWorks";
 import FaqSection from "./components/FaqSection/FaqSection";
 import Footer from "./components/Footer/Footer";
+import SmoothScrollWrapper from "./components/LenisJS/SmoothScrollWrapper";
+import FadeInSection from "./components/LenisJS/FadeInSection";
 
 function App() {
   return (
-    <>
+    <SmoothScrollWrapper>
       <div className="bg">
         <Navbar />
         <HeroSection />
         <LogoSection />
       </div>
-      <ProblemSection />
+
+      <FadeInSection>
+        <ProblemSection />
+      </FadeInSection>
+
       <HowItWorks />
-      <SolutionSection />
-      <FeatureSection />
-      <TestimonialSection />
-      <PricingSection />
+
+      <FadeInSection>
+        <SolutionSection />
+      </FadeInSection>
+
+      <FadeInSection>
+        <FeatureSection />
+      </FadeInSection>
+
+      <FadeInSection>
+        <TestimonialSection />
+      </FadeInSection>
+
+      <FadeInSection>
+        <PricingSection />
+      </FadeInSection>
+
       <CtaSection />
-      <FaqSection />
-      <Footer />
-    </>
+
+      <FadeInSection>
+        <FaqSection />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Footer />
+      </FadeInSection>
+    </SmoothScrollWrapper>
   );
 }
 
