@@ -6,9 +6,9 @@ export default function PricingSection() {
     <section className="py-12 sm:py-16 md:py-20 text-[#000000]/70 pricing-section bg-[#F5E6D3]">
       <div className="max-w-7xl mx-auto space-y-12 md:space-y-16 px-4 sm:px-6 text-center">
         <div className="contentPadding space-y-3 md:space-y-4">
-          <h2 className="text-balance max-w-3xl mx-auto text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-[#000000] leading-tight px-2">
-            Your Team Didn't Sign Up to{" "}
-            <span className="highlight text-[#FB2B8F]">Copy-Paste Data</span>
+          <h2 className="text-balance max-w-3xl mx-auto text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold px-2">
+            Your team didn't sign up to{" "}
+            <span className="highlight text-[#FB2B8F]">Copy-Paste data</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-medium px-2">
             Pick the plan that gives them their actual job back
