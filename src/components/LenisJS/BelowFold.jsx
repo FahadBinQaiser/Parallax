@@ -1,14 +1,14 @@
 import React from "react";
 import FadeInSection from "./FadeInSection";
-import ProblemSection from "./ProblemSection/ProblemSection";
-import HowItWorks from "./HowItWorks/HowItWorks";
-import SolutionSection from "./SolutionSection/SolutionSection";
-import FeatureSection from "./FeatureSection/FeatureSection";
-import TestimonialSection from "./TestimonialSection/TestimonialSection";
-import PricingSection from "./PricingSection/PricingSection";
-import CtaSection from "./CtaSection/CtaSection";
-import FaqSection from "./FaqSection/FaqSection";
-import Footer from "./Footer/Footer";
+import ProblemSection from "../ProblemSection/ProblemSection";
+import HowItWorks from "../HowItWorks/HowItWorks";
+import SolutionSection from "../SolutionSection/SolutionSection";
+import FeatureSection from "../FeatureSection/FeatureSection";
+import TestimonialSection from "../TestimonialSection/TestimonialSection";
+import PricingSection from "../PricingSection/PricingSection";
+import CtaSection from "../CtaSection/CtaSection";
+import FaqSection from "../FaqSection/FaqSection";
+import Footer from "../Footer/Footer";
 
 export default function BelowFold() {
   return (

@@ -3,7 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import HeroSection from "./components/HeroSection/HeroSection";
 import LogoSection from "./components/LogoSection/LogoSection";
-import SmoothScrollWrapper from "./components/SmoothScrollWrapper";
+import SmoothScrollWrapper from "./components/LenisJS/SmoothScrollWrapper";
 
 const BelowFold = lazy(() => import("./components/LenisJS/BelowFold"));
 
