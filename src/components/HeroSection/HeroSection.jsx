@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../UI_Components/StyledWrapper";
 export default function HeroSection() {
   return (
-    <div className="heroSection px-4 flex flex-col text-[#000000]/70 gap-5 justify-center items-center h-[85vh]">
+    <div className="heroSection px-4 flex flex-col text-[#000000]/70 gap-5 justify-center items-center h-[80vh]">
       <p className="text-lg sm:text-xl text-center max-w-xl font-medium">
         Trusted by 50+ SaaS teams worldwide
       </p>
