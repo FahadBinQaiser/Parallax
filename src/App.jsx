@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-import HeroSection from "./components/HeroSection/HeroSection";
 import Navbar from "./components/Navbar/Navbar";
+import HeroSection from "./components/HeroSection/HeroSection";
 import LogoSection from "./components/LogoSection/LogoSection";
 import ProblemSection from "./components/ProblemSection/ProblemSection";
 import SolutionSection from "./components/SolutionSection/SolutionSection";
@@ -12,10 +12,11 @@ import CtaSection from "./components/CtaSection/CtaSection";
 import HowItWorks from "./components/HowItWorks/HowItWorks";
 import FaqSection from "./components/FaqSection/FaqSection";
 import Footer from "./components/Footer/Footer";
+import SmoothScrollWrapper from "./components/LenisJS/SmoothScrollWrapper";
 
 function App() {
   return (
-    <>
+    <SmoothScrollWrapper>
       <div className="bg">
         <Navbar />
         <HeroSection />
@@ -30,7 +31,7 @@ function App() {
       <CtaSection />
       <FaqSection />
       <Footer />
-    </>
+    </SmoothScrollWrapper>
   );
 }
 
