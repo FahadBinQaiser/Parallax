@@ -173,6 +173,7 @@ const StyledWrapper = styled.div`
   .list_text {
     font-size: 1.14rem;
     color: var(--white);
+    text-align: left;
   }
 
   .button {
@@ -237,6 +238,7 @@ const StyledWrapper = styled.div`
   .transparent-card .card_paragraph,
   .transparent-card .list_text {
     color: rgba(0, 0, 0, 0.7);
+    text-align: left;
   }
 
   .transparent-card .pricing-tooltip {
