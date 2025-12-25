@@ -1,9 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
 @import "tailwindcss";
 
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/sf-pro-display/SFPRODISPLAYREGULAR.OTF") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/sf-pro-display/SFPRODISPLAYBOLD.OTF") format("opentype");
+  font-weight: 700;
+}
+
 body {
-  font-family: "Instrument Serif", serif;
-  background: #f2e8cf;
+  font-family: "SF Pro Display", sans-serif;
+  background-color: #f2e8cf;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+.heading {
+  font-weight: 700;
 }
 .cube-container {
   perspective: 1000px;

@@ -9,14 +9,18 @@ import FeatureSection from "./components/FeatureSection/FeatureSection";
 import TestimonialSection from "./components/TestimonialSection/TestimonialSection";
 import PricingSection from "./components/PricingSection/PricingSection";
 import CtaSection from "./components/CtaSection/CtaSection";
+import HowItWorks from "./components/HowItWorks/HowItWorks";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <LogoSection />
+      <div className="bg">
+        <Navbar />
+        <HeroSection />
+        <LogoSection />
+      </div>
       <ProblemSection />
+      <HowItWorks />
       <SolutionSection />
       <FeatureSection />
       <TestimonialSection />

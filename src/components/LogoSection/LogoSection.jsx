@@ -19,7 +19,7 @@ const LogoSection = () => {
   ];
 
   return (
-    <section className="py-10 px-6 bg-[#f2e8cf]">
+    <section className="py-10 px-6">
       <div className="max-w-6xl mx-auto text-center">
         <div className="grid grid-cols-3 lg:grid-cols-6 gap-10 items-center justify-items-center transition-opacity duration-300">
           {logos.map(({ icon: Icon, name }, index) => (

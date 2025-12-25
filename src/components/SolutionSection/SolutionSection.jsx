@@ -1,36 +1,39 @@
 import React from "react";
 import StyledWrapper from "../UI_Components/StyledWrapper";
 import Card from "../UI_Components/Card";
-import { FaRegClock, FaTasks, FaSmile } from "react-icons/fa";
+import { FaRegClock, FaRunning, FaDollarSign } from "react-icons/fa";
 
 export default function SolutionSection() {
   const solutions = [
     {
-      icon: <FaRegClock className="text-[#FB2B8F] text-4xl" />,
-      title: "Works 24/7",
-      desc: "Your AI teammate never needs sleep, breaks, or downtime it's always there, ready to handle tasks around the clock.",
+      icon: <FaRegClock className="text-[#FB2B8F] text-3xl" />,
+      title: "19 hours saved per week",
+      desc: "Eliminate data entry, status updates, and routing so teams can focus on fixing workflows, not maintaining them.",
     },
     {
-      icon: <FaTasks className="text-[#FB2B8F] text-4xl" />,
-      title: "Never forgets a task",
-      desc: "No sticky notes, no missed deadlines. Your agent remembers and executes every detail with perfect consistency.",
+      icon: <FaRunning className="text-[#FB2B8F] text-3xl" />,
+      title: "73% faster customer onboarding",
+      desc: "Reduce onboarding from 6 hours to 90 minutes and handle 3x more customers without adding headcount.",
     },
     {
-      icon: <FaSmile className="text-[#FB2B8F] text-4xl" />,
-      title: "Doesn't complain",
-      desc: "It handles all the repetitive, boring, low-leverage tasks without burning out, so your team can stay focused on the big wins.",
+      icon: <FaDollarSign className="text-[#FB2B8F] text-3xl" />,
+      title: "$47,000 saved per year",
+      desc: "Typical savings for a 15-person team from fewer errors, less rework, and ROI in weeks instead of months.",
     },
   ];
 
   return (
     <section className="text-[#000000]/70 py-20 px-5 xl:px-0">
-      <div className="max-w-6xl space-y-10 mx-auto text-center">
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900 leading-tight">
-          Meet your{" "}
-          <span className="highlight text-[#FB2B8F]">AI teammate</span> that
-          never sleeps.
-        </h1>
-
+      <div className="max-w-6xl space-y-6 mx-auto text-center">
+        <div className="contentText py-6">
+          <h1 className="text-4xl text-balance sm:text-5xl md:text-6xl font-bold">
+            What happens when you{" "}
+            <span className="highlight text-[#FB2B8F]">automate busywork</span>
+          </h1>
+          <p className="text-xl pt-4 font-medium">
+            Real numbers from teams who stopped wasting time
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-6">
           {solutions.map((item, idx) => (
             <div
@@ -46,18 +49,12 @@ export default function SolutionSection() {
           ))}
         </div>
 
-        <p className="text-lg md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-          That's exactly what our AI agent does. It quietly takes over the
-          repetitive, low-leverage tasks holding your team back, so your people
-          focus on what matters{" "}
-          <span className="text-[#FB2B8F] font-semibold">
-            strategy, creativity, growth.
-          </span>
+        <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+          This isn’t just automation. It removes the work draining your team
+          every week so they can focus on execution, not cleanup.
         </p>
 
-        <StyledWrapper>
-          <button className="btn">Book a Call</button>
-        </StyledWrapper>
+        <StyledWrapper width={"full"} />
       </div>
     </section>
   );
