@@ -65,7 +65,7 @@ const StyledWrapper = styled.div`
     flex-direction: column;
     gap: 1rem;
     padding: 1.4rem;
-    width: 25rem;
+    width: 100%;
     background-color: hsl(340, 15%, 8%);
     background-image: radial-gradient(
         at 80% 10%,
@@ -200,7 +200,7 @@ const StyledWrapper = styled.div`
 
   @media (max-width: 1024px) {
     .card {
-      width: 22rem;
+      width: 100%;
       padding: 1.5rem;
     }
     .card_title__container .card_title {
@@ -214,7 +214,7 @@ const StyledWrapper = styled.div`
     background: transparent;
     background-image: none;
     box-shadow: none;
-    border: 2px solid hsl(340, 60%, 40%);
+    border: 1px solid rgba(251, 43, 143, 0.7);
   }
 
   .transparent-card .pricing-tooltip {
