@@ -27,7 +27,7 @@ export default function SolutionSection() {
       <div className="max-w-6xl space-y-6 mx-auto text-center">
         <div className="contentText py-6">
           <h1 className="text-4xl text-balance sm:text-5xl md:text-6xl font-bold">
-            What happens when you{" "}
+            What happens when SaaS teams{" "}
             <span className="highlight text-[#FB2B8F]">automate busywork</span>
           </h1>
           <p className="text-xl pt-4 font-medium">
