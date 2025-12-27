@@ -78,11 +78,11 @@ export default function AnimatedTimeline({ steps }) {
 
   return (
     <div ref={sectionRef} className="relative min-h-[80vh] md:min-h-full">
-      <div className="hidden md:block absolute left-1/2 top-0 w-1 bg-[#FB6F92]/20 h-full -translate-x-1/2">
-        <div ref={lineRef} className="w-full bg-[#FB6F92] origin-top"></div>
+      <div className="hidden md:block absolute left-1/2 top-0 w-1 bg-[#FB2B8F]/20 h-full -translate-x-1/2">
+        <div ref={lineRef} className="w-full bg-[#FB2B8F] origin-top"></div>
       </div>
 
-      <div className="md:hidden absolute left-6 top-0 w-0.5 bg-[#FB6F92]/30 h-full"></div>
+      <div className="md:hidden absolute left-6 top-0 w-0.5 bg-[#FB2B8F]/30 h-full"></div>
 
       <div className="md:pl-0 pl-12">
         {steps.map((step, index) => (

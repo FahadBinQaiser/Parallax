@@ -28,7 +28,7 @@ export default function HowItWorks() {
       <div className="max-w-6xl mx-auto text-[#000000]/70">
         <div className="text-center mb-16 md:mb-24">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6">
-            Setup in <span className="text-[#FB6F92]">minutes</span>,<br />
+            Setup in <span className="text-[#FB2B8F]">minutes</span>,<br />
             not months
           </h2>
           <p className="text-lg md:text-xl lg:text-2xl font-medium">
