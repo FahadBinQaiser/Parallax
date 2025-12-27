@@ -29,7 +29,7 @@ export default function ProblemSection() {
             The problem
           </span>
           <h1 className="text-4xl text-balance heading">
-            The problem with growth? <br />
+            Growth stalled by busywork? <br />
             <span className="text-[#FB2B8F]">Too many moving parts.</span>
           </h1>
           <p className="text-lg font-medium">
