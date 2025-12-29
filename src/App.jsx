@@ -32,6 +32,7 @@ function App() {
       <CtaSection />
       <FaqSection />
       <Footer />
+      <Analytics />
     </SmoothScrollWrapper>
   );
 }
