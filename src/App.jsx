@@ -17,23 +17,25 @@ import SmoothScrollWrapper from "./components/LenisJS/SmoothScrollWrapper";
 
 function App() {
   return (
-    <SmoothScrollWrapper>
-      <div className="bg">
-        <Navbar />
-        <HeroSection />
-        <LogoSection />
-      </div>
-      <ProblemSection />
-      <HowItWorks />
-      <SolutionSection />
-      <FeatureSection />
-      <TestimonialSection />
-      <PricingSection />
-      <CtaSection />
-      <FaqSection />
-      <Footer />
+    <>
       <Analytics />
-    </SmoothScrollWrapper>
+      <SmoothScrollWrapper>
+        <div className="bg">
+          <Navbar />
+          <HeroSection />
+          <LogoSection />
+        </div>
+        <ProblemSection />
+        <HowItWorks />
+        <SolutionSection />
+        <FeatureSection />
+        <TestimonialSection />
+        <PricingSection />
+        <CtaSection />
+        <FaqSection />
+        <Footer />
+      </SmoothScrollWrapper>
+    </>
   );
 }
 
